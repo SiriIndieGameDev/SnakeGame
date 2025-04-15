@@ -1,0 +1,56 @@
+Snake Game
+
+Cel projektu
+Cwiczenie programowania w C++ i SFML2.
+
+Czego uzywam do projektu?
+ - Jezyk programowania: C++.
+ - Biblioteka: SFML2w
+
+Co dokladnie musze zrobic?
+Prototyp
+ - Jak sie bedzie poruszac waz? (za pomoca klawiatury, myszy, pada?)
+   - Za pomoca W, S, A, D
+
+ - Jak bedzie wyswietlany waz?
+   - Do ladowania obrazkow uzyje texture, a do wyswietlania ich sprite.
+
+ - Co zrobic aby waz sie rozszerzel po zjedzeniu jablek?
+   - Dodac na koncu weza segment.
+   - Do tego celu uzyje vector.
+
+ - Jak przechowywac pozycje weza?
+   - Pozycje weza bede przechowywac w wektorze.
+   - W zaleznosci od przycisnietego klawisza bede zwiekszac albo zmniejszac wartosc tego wektora.
+   - Najpierw waz jest w pozycji aktualnej (currentPosition).
+
+ - Jak zrobic losowanie pozycji jablek?
+   - Do losowania pozycji jablek uzyje funkvji rand();
+ 
+ - Jak zrobic kolizje weza z jablkami?
+   - W zwiazku z tym, ze narazie to jest prototyp kolizja, ktorej uzyje jest BoxCollision.
+ 
+ - Jak zrobic kolizje weza ze sciana?
+   - Albo w postaci BoXCollision.
+   - Policzyc odleglosc glowy weza od sciany i jesli odleglosc (pozycja) glowy weza jest mniejsza niz wielkosc sciany to nastapila kolizja. W innym przypadku kolizji nie ma.3
+ 
+ - Jak zrobic kolizje weza z samym soba?
+   - Sprawdzic czy pozycja glowy weza i jego cialo nachodza sie i jesli tak to znaczy, ze jest kolizja i znika jedno zycie weza.
+
+ - Jak ladowac dzwieki i muzykw do weza.
+
+W dalszej kolejnosci:
+ - Zrobic 3 zycia weza
+ - Zrobic uciekajacy czas na przejscie gry.
+ - Poziomy trudnosci
+
+Jakie beda uzywane klasy do napisania weza?
+ - SnakeGameApp (przestrzen nazw do przechowywania wszystkich klas potrzebnych do napisania weza)
+ - SnakeGame (przechowuje cala gre)
+ - Gameplay (rozgrywka gry)
+ - Character (przechowuje rzeczy, ktore beda miec rozne postacie w grze)
+ - Snake (pierwsza postac, ktora gra gracz)
+ - Food (przechowuje rozne rodzaje jedzenia weza)
+ - Apple (pierwsze jedzenie weza)
+ - Level (dostepne posiomy w grze - do rozszerzenia klasa)
+ - Audio (do przechowywania muzyki i dzwiekow z weza)
